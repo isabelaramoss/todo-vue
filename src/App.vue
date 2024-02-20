@@ -60,7 +60,8 @@
 <!--html-->
 <template>
   <div class="container">
-    <Cabecalho tarefas-pendentes="10"/>
+    <!--erro: -->
+    <Cabecalho />
     <Formulario/>
     <ListaDeTarefas/>
   </div>
