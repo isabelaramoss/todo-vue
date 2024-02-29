@@ -61,14 +61,8 @@
 <template>
   <div class="container">
     <Cabecalho :tarefas-pendentes="getTarefasPendentes().length"/>
-    <Formulario :tarefa-temporaria="estado.tarefaTemporaria" :edita-tarefa-temp="e => estado.tarefaTemporaria = e.target.value" :cadastra-tarefa="cadastraTarefa"/>
-    <ListaDeTarefas />
+    <Formulario :trocar-filtro="e => estado.filtro = e.target.value" :tarefa-temporaria="estado.tarefaTemporaria" :edita-tarefa-temp="e => estado.tarefaTemporaria = e.target.value" :cadastra-tarefa="cadastraTarefa"/>
+    <ListaDeTarefas :tarefas="getTarefasFiltradas()"/>
   </div>
 </template>
 
-<!--css-->
-<style scoped>
-  .done{
-    text-decoration: line-through;
-  }
-</style>

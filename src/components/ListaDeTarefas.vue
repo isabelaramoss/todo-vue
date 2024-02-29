@@ -14,3 +14,10 @@
     </li>
   </ul>
 </template>
+
+<!--css-->
+<style scoped>
+  .done{
+    text-decoration: line-through;
+  }
+</style>
