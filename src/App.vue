@@ -60,10 +60,9 @@
 <!--html-->
 <template>
   <div class="container">
-    <!--erro: -->
-    <Cabecalho />
-    <Formulario/>
-    <ListaDeTarefas/>
+    <Cabecalho :tarefas-pendentes="getTarefasPendentes()"/>
+    <Formulario  />
+    <ListaDeTarefas />
   </div>
 </template>
 
