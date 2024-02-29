@@ -61,8 +61,8 @@
 <template>
   <div class="container">
     <Cabecalho :tarefas-pendentes="getTarefasPendentes()"/>
-    <Formulario  />
-    <ListaDeTarefas />
+    <Formulario :tarefa-temporaria="estado.tarefaTemporaria" :edita-tarefa-temp="e => estado.tarefaTemporaria = e.target.value" :cadastra-tarefa="cadastraTarefa"/>
+    <!-- <ListaDeTarefas /> -->
   </div>
 </template>
 
